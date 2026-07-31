@@ -1,10 +1,10 @@
 import "./App.css";
-import StopWatch from "./components/home_task_17";
+import ToDoMemo from "./components/home_task_18";
 
 function App() {
     return (
         <div className="homeworks">
-            <StopWatch />
+            <ToDoMemo />
         </div>
     );
 }
