@@ -1,10 +1,10 @@
 import "./App.css";
-import AppAuthUser from "./components/home_task_16.jsx";
+import StopWatch from "./components/home_task_17";
 
 function App() {
     return (
         <div className="homeworks">
-            <AppAuthUser />
+            <StopWatch />
         </div>
     );
 }
