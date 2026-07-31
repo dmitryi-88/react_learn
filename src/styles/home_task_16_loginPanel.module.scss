@@ -1,0 +1,29 @@
+.authPanel {
+    height: 200px;
+    width: 400px;
+    border: 1px solid gray;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    input {
+        border-radius: 5px;
+        width: 200px;
+    }
+
+    button {
+        border-radius: 5px;
+        width: 200px;
+        transition: ease 0.2s;
+
+        cursor: pointer;
+
+        &:hover {
+            transform: translateY(5%);
+        }
+    }
+}

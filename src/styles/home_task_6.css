@@ -1,0 +1,56 @@
+:root {
+    --radius: 10px;
+    --size-text: 15px;
+    --back-color: #909090;
+    --main-color: #00565a;
+    --text-color: #000000;
+}
+
+* {
+    font-size: 15px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.TodoListContainer {
+    background: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.addtask {
+    display: flex;
+    gap: 10px;
+}
+
+.addtask button {
+    border-radius: var(--radius);
+    color: var(--text-color);
+    background: var(--back-color);
+}
+
+.addtask input {
+    border-radius: var(--radius);
+    color: var(--text-color);
+    height: 30px;
+}
+
+#checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 5px;
+}

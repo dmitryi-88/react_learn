@@ -1,0 +1,67 @@
+.profiles {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+
+    background-color: beige;
+}
+
+.cardUser {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+
+    border-radius: 10px;
+    border: 1px solid black;
+
+    background-color: rgb(230, 229, 229);
+}
+
+.cardUser.active {
+    background-color: rgb(160, 237, 160);
+}
+
+button {
+    cursor: pointer;
+    transition: ease 0.2s;
+}
+
+button:hover {
+    transform: translateY(5%);
+}
+
+.activeBtn {
+    background-color: rgb(160, 237, 160);
+}
+
+button.active {
+    background-color: rgb(230, 229, 229);
+}
+
+.nameForm {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#small {
+    width: 100px;
+    border-radius: 5px;
+}
+
+#big {
+    width: 200px;
+    border-radius: 5px;
+}
