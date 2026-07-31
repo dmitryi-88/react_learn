@@ -1,19 +1,27 @@
 import { useState, useRef } from "react";
 
 function StopWatch() {
-    console.log("rerender...");
     const [seconds, setSeconds] = useState(0);
     const refID = useRef(null);
 
     const handleStart = () => {
-        setInterval(() => {
+        if (refID.current !== null) return;
+
+        refID.current = setInterval(() => {
             setSeconds((prev) => prev + 1);
         }, 1000);
     };
 
     const handleStop = () => {
-        clearInterval()
-    }
+        clearInterval(refID.current);
+        refID.current = null;
+    };
+
+    const handleReset = () => {
+        clearInterval(refID.current);
+        refID.current = null;
+        setSeconds(0);
+    };
 
     return (
         <>
@@ -21,8 +29,8 @@ function StopWatch() {
             <p>Прошло секунд: {seconds}</p>
 
             <button onClick={handleStart}>Старт</button>
-            <button>Стоп</button>
-            <button>Сброс</button>
+            <button onClick={handleStop}>Стоп</button>
+            <button onClick={handleReset}>Сброс</button>
         </>
     );
 }
