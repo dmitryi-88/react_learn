@@ -1,10 +1,10 @@
 import "./App.css";
-import ToDoMemo from "./components/home_task_18";
+import SearchUsers from "./components/home_task_19";
 
 function App() {
     return (
         <div className="homeworks">
-            <ToDoMemo />
+            <SearchUsers />
         </div>
     );
 }
