@@ -1,0 +1,93 @@
+@mixin flex-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+@mixin button {
+    transition: ease 0.2s;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(15%);
+        box-shadow: 0 5px 5px 0 $main-color;
+    }
+}
+
+$main-color: #422100;
+$sub-color: #49ffb6;
+$text-color: #d8d8d8;
+
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+
+    @include flex-center;
+
+    height: 100vh;
+    border-radius: 10px;
+    background-color: $sub-color;
+
+    .header {
+        @include flex-center;
+
+        h1 {
+            color: $main-color;
+        }
+
+        input {
+            background-color: $main-color;
+            color: $text-color;
+            text-align: center;
+
+            font-size: 18px;
+            border: 0;
+            border-radius: 5px;
+        }
+
+        button {
+            @include button;
+
+            background-color: $main-color;
+            color: $text-color;
+
+            font-size: 18px;
+            border: 0;
+            border-radius: 5px;
+        }
+    }
+
+    .taskList {
+        @include flex-center;
+
+        ul {
+            @include flex-center;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #4221004f;
+        }
+
+        li {
+            list-style: none;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            padding-bottom: 10px;
+
+            input {
+                @include button;
+
+                width: 20px;
+                height: 20px;
+            }
+
+            button {
+                @include button;
+
+                border: 0;
+                border-radius: 5px;
+            }
+        }
+    }
+}
