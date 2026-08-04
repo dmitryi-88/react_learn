@@ -1,10 +1,10 @@
 import "./App.css";
-import AppTodo from "./components/home_task_20";
+import Counter from "./components/home_task_24";
 
 function App() {
     return (
         <div className="homeworks">
-            <AppTodo />
+            <Counter /> 
         </div>
     );
 }
