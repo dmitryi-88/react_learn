@@ -1,10 +1,11 @@
 import "./App.css";
-import Counter from "./components/home_task_24";
+import AppQuoteViewer from "./components/home_task_21";
+
 
 function App() {
     return (
         <div className="homeworks">
-            <Counter /> 
+            <AppQuoteViewer />
         </div>
     );
 }
