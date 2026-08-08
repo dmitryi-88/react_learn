@@ -1,0 +1,27 @@
+@use './home_task_22_Variables.scss' as *;
+
+.error {
+    @include DisplayFlex;
+    @include pageStyle;
+    border: 3px solid red;
+
+
+    h3 {
+        color: red;
+    }
+
+    button {
+        cursor: pointer;
+        transition: ease 0.2s;
+        border: 0;
+        border-radius: 5px;
+
+        background-color: $main-color;
+        color: $sub-color;
+        font-size: 17px;
+
+        &:hover {
+            transform: translateY(10%);
+        }
+    }
+}

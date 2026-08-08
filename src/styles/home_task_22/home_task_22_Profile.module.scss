@@ -1,0 +1,32 @@
+@use './home_task_22_Variables.scss' as *;
+
+.loading {
+    @include DisplayFlex;
+
+    background-color: $sub-color;
+    width: 80vw;
+    border-radius: 10px;
+    box-shadow: $shadows;
+    padding: 20px;
+
+    cursor: not-allowed;
+
+    h2 {
+        color: $main-color;
+        font-size: 30px;
+    }
+}
+
+.profile {
+    @include DisplayFlex;
+    @include pageStyle;
+
+    h2 {
+        color: $main-color;
+    }
+
+    span {
+        color: $main-color;
+        font-size: 18px;
+    }
+}

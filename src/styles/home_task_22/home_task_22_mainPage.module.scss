@@ -1,0 +1,15 @@
+@use "../../styles/home_task_22/home_task_22_Variables.scss" as *;
+
+.mainPage {
+    @include DisplayFlex;
+    @include pageStyle;
+
+    h2 {
+        color: $main-color;
+    }
+
+    span {
+        color: $main-color;
+        font-size: 18px;
+    }
+}
